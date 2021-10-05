@@ -1,0 +1,105 @@
+img {
+  margin-top: 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+
+
+::placeholder {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+span {
+  margin: 20px auto;
+}
+
+
+.button {
+  margin: 20px auto;
+  backface-visibility: hidden;
+  background: #6600FF;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: 1rem 1.25rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button:focus {
+  outline: 0 solid transparent;
+}
+
+.button:focus:before {
+  border-width: .125rem;
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+#task-frontend {
+  max-width: 400px;
+  margin: 5% auto;
+  text-align: center;
+  background-color: #D7D7D7;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px black;
+  height: 500px;
+}
+
+
+#task-frontend .basic-title {
+  color: red;
+}
+
+#task-frontend span {
+  display: block;
+}
+
+
+#task-frontend input[type="checkbox"] {
+  border: 1px solid red;
+  text-transform: none;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}
